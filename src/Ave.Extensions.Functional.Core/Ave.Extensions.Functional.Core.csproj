@@ -1,8 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Description>Package containing base classes for functional extensions</Description>
+    <Description>Package containing base classes for functional extensions.</Description>
+    <PackageProjectUrl>https://github.com/aadversteeg/Ave.Extensions.Functional.Core</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>
