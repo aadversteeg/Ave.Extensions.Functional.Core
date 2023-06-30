@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Package containing base classes for functional extensions</Description>
   </PropertyGroup>
 
 </Project>
