@@ -43,7 +43,8 @@ namespace UnitTests.Ave.Functional
             var act = () => maybe.Value;
 
             // assert
-           act.Should().Throw<InvalidOperationException>();
+           act.Should().Throw<InvalidOperationException>()
+                .WithMessage("Property Value of Maybe cannot be accesses because the Maybe has no value.");
         }
 
         [Fact(DisplayName = "M-0010: Value should return value of maybe.From.")]

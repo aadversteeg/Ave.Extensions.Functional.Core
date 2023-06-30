@@ -19,7 +19,7 @@ namespace Ave.Extensions.Functional
 			{
 				if (!_hasValue)
 				{
-					throw new InvalidOperationException();
+					throw new InvalidOperationException("Property Value of Maybe cannot be accesses because the Maybe has no value.");
 				}
 				return _value; 
 			}

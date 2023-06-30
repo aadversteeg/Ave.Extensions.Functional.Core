@@ -46,7 +46,8 @@ namespace UnitTests.Ave.Functional
 			var act = () => result.Value;
 
 			// assert
-			act.Should().Throw<InvalidOperationException>();
+			act.Should().Throw<InvalidOperationException>()
+				.WithMessage("Property Value of Result cannot be accessed because Result is failure.");
 		}
 
 		[Fact(DisplayName = "R-0007: Getting errors on result indicating success with a value should fail.")]
@@ -59,7 +60,8 @@ namespace UnitTests.Ave.Functional
 			var act = () => result.Error;
 
 			// assert
-			act.Should().Throw<InvalidOperationException>();
+			act.Should().Throw<InvalidOperationException>()
+				.WithMessage("Property Error of Result cannot be accessed because Result is successful.");
 		}
 	}
 }

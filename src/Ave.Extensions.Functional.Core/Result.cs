@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 namespace Ave.Extensions.Functional
 {
@@ -25,7 +26,7 @@ namespace Ave.Extensions.Functional
 			{ 
 				if(_isSuccess)
 				{
-					throw new InvalidOperationException();
+					throw new InvalidOperationException("Property Error of Result cannot be accessed because Result is successful.");
 				}
 
 				return _error; 
@@ -38,7 +39,7 @@ namespace Ave.Extensions.Functional
 			{
 				if (!_isSuccess)
 				{
-					throw new InvalidOperationException();
+					throw new InvalidOperationException("Property Value of Result cannot be accessed because Result is failure.");
 				}
 
 				return _value;
